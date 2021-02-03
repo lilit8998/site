@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New page</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	
+	<ul id="menu">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a class="active" href="adress.html">Adress</a></li>
+		<li><a href="contactUs.html">Contact us</a></li>
+	</ul>
+		<h2 style="color: white; text-align: center; font-size: 35px; "> Adress</h2>
+			<div id="map">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:700px;width:1000px; '></div><div><small></small></div><div><small><a href="https://buyproxies.io/"></a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(40.78947479787096,43.845080893640095),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.78947479787096,43.845080893640095)});infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Armenia, Gyumri <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
+			</div>
+</body>
+</html>
